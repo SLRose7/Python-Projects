@@ -1,0 +1,26 @@
+#Greeting
+print("Welcome to the Tip Calculator!")
+
+#ask user for bill amount
+bill_amt = float(input("How much is the bill?\n"))
+
+#ask user for tip percentage
+tip = int(input("What is the percentage you would like to tip?\n"))
+
+#ask user how many people you want to split the bill between
+people = int(input("How many people will be splitting this bill?\n"))
+
+#calculate tip percentage of the bill 
+calc_tip = tip / 100 
+tip_amt = (calc_tip * tip)
+
+#add the tip percentage to the bill 
+total_bill = bill_amt + tip
+
+#divide total bill (with tip) by 5 people
+amt_due_pp = total_bill / people
+
+final_amount = round(amt_due_pp, 2)
+final_amount = "{:.2f}".format(amt_due_pp)
+
+print(f"Each person will be responsible for: ${final_amount}")
