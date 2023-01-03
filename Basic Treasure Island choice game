@@ -28,7 +28,7 @@ print("Your mission is to find the treasure.")
 choice1 = input('You come to a fork in the road. Which way do you choose? Type "left" or "right"\n').lower()
 if choice1 == "left":
   print("Great choice!")
-  choice2 = input('Continuing down the path, you come to a river. Do you swim across or wait for a boat. Type "swim" or "wait"\n').lower()
+  choice2 = input('Continuing down the path, you come to a river. Do you swim across or wait for a boat? Type "swim" or "wait"\n').lower()
   if choice2 == "wait":
     print("Great choice! A boat brings you to a property with a beautiful house on it.")
     choice3 = input('The house has 3 doors-blue, red and yellow. Choose a color door. Type "red", "blue" or "yellow" \n').lower()
